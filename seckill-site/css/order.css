@@ -1,0 +1,45 @@
+.navbar {
+    margin-bottom: 10px;
+}
+.container {
+    background: #fff;
+    padding: 15px 0;
+    margin-bottom: 10px;
+}
+.order-list {
+}
+.order {
+    width: 90%;
+    height: auto;
+    font-size: 14px;
+    padding: 15px;
+    overflow: auto;
+    background: #fff;
+    margin: 10px auto;
+    border: 5px solid #f6f6f6;
+}
+.order-time {
+    margin-top: 10px;
+    float: left;
+}
+.order-status {
+    margin-top: 10px;
+    float: right;
+}
+.order-link>a {
+    display: block;
+    text-align: left;
+    margin-top: 40px;
+}
+.order-link>a>img {
+    width: auto;
+    height: 150px;
+    float: left;
+    margin-right: 20px;
+}
+.order-price {
+    display: inline-block;
+}
+.order-permit {
+    float: right;
+}

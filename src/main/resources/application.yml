@@ -1,0 +1,20 @@
+# profile
+spring:
+  profiles:
+    active: dev
+  # error
+  web:
+    resources:
+      add-mappings: false
+  #404错误也由mvc处理
+  mvc:
+    throw-exception-if-no-handler-found: true
+
+# logback
+logging:
+  config: classpath:logback-spring-${spring.profiles.active}.xml
+
+# mybatis-plus
+mybatis-plus:
+  mapper-locations: classpath:mappers/*.xml
+

@@ -1,0 +1,36 @@
+# suppress inspection "UnusedProperty" for whole file
+
+# server
+server:
+  port: 8080
+
+spring:
+  # datasource
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/seckill?characterEncoding=utf-8&useSSL=false&serverTimezone=Hongkong
+    username: root
+    password: 123456
+    type: com.alibaba.druid.pool.DruidDataSource
+  # redis
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: 123456
+  # ThreadPool
+  task:
+    execution:
+      pool:
+        core-size: 5
+        max-size: 15
+        queue-capacity: 100
+# rocketmq
+rocketmq:
+  name-server: 127.0.0.1:9876
+  producer:
+    group: seckill_producer
+# path 前端的地址，配置了才能处理跨域问题
+seckill:
+  web:
+    path: http://127.0.0.1:5500
